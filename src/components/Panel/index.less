@@ -1,0 +1,35 @@
+.ro-panel {
+    background: #fff;
+    width: 100%;
+    border-radius: .3rem;
+  .title {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    color: rgba(0,0,0,0.9);
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 1.5rem;
+        right: 1.5rem;
+        bottom: 0;
+        height: 1px;
+        background: rgba(0,0,0,0.3);
+    }
+  }
+  .content {
+      transition: .4s all ease;
+      position: relative;
+      height: auto;
+  }
+  .icon {
+        display: block;
+        height: 2rem;
+        color: #233;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

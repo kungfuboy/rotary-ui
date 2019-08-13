@@ -1,0 +1,19 @@
+{
+    "restartable": "rs",
+    "ignore": [
+        ".git",
+        ".svn",
+        "node_modules/**/node_modules",
+        "package.json",
+        "src/pages/*",
+        "src/components/index.js",
+        "src/demo/index.js",
+        "src/router.js",
+        "src/index.js"
+    ],
+    "verbose": true,
+    "execMap": {
+        "js": "node --harmony"
+    },
+    "watch": []
+}

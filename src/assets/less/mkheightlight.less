@@ -1,0 +1,157 @@
+@titleColor: #6699a1;
+
+.mk-format {
+  color: #233;
+  /deep/ .markdown {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 20px 0 15px 0;
+    }
+    h1 {
+      color: @titleColor;
+      font-size: 36px;
+    }
+    h2 {
+      color: @titleColor;
+      font-size: 32px;
+    }
+    h3 {
+      color: @titleColor;
+      font-size: 28px;
+    }
+    h4 {
+      color: @titleColor;
+      font-size: 24px;
+    }
+    h5 {
+      color: @titleColor;
+      font-size: 20px;
+    }
+    h6 {
+      color: @titleColor;
+      font-size: 16px;
+    }
+    blockquote > p {
+      //强调样式
+      background: rgba(102, 153, 161, 0.2);
+      border-left: 5px solid #fff;
+      margin: 10px;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+    strong {
+      //加粗样式
+      color: #233;
+      font-weight: 900;
+      margin: 0 4px;
+    }
+    em {
+      //斜体样式
+      font-style: italic;
+    }
+    > ul {
+      padding-left: 30px;
+      margin: 10px 0;
+      > li {
+        //要点样式
+        list-style: disc;
+        margin-bottom: 8px;
+        > ul > li {
+          list-style: circle;
+        }
+      }
+    }
+    ol {
+      padding-left: 30px;
+      margin: 10px 0;
+      > li {
+        list-style: decimal;
+      }
+    }
+    p > a {
+      //链接样式
+      color: #0089a7;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    s {
+      // 删除线
+      text-decoration: line-through;
+    }
+    hr {
+      // 横线样式
+      margin: 20px 0;
+      border: none;
+      border-bottom: 1px solid @titleColor;
+    }
+    table {
+      width: 100%;
+      border-color: #0089a7;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 137, 167, 0.4);
+      thead tr,
+      tr:nth-child(even) {
+        background: rgba(51, 103, 116, 0.1);
+      }
+      tbody tr:nth-child(odd) {
+        background: rgba(255, 255, 255, 0.5);
+      }
+      tr {
+        td,
+        th {
+          height: 40px;
+          padding: 0 15px;
+          border: 1px solid rgba(0, 137, 167, 0.2);
+        }
+      }
+    }
+    p code {
+      display: inline-block;
+      background: rgba(0, 137, 167, 0.3);
+      border-radius: 5px;
+      padding: 2px 8px;
+      margin: 0 2px;
+      color: #20604f;
+    }
+    pre {
+      display: block;
+      width: 100%;
+      background: rgba(0, 137, 167, 0.2);
+      border: 2px solid rgba(0, 137, 167, 0.6);
+      margin: 20px 0;
+      box-sizing: border-box;
+      padding: 20px 30px;
+      box-shadow: 0 0 10px rgba(0, 137, 167, 0.4);
+      border-radius: 5px;
+      code {
+        color: #376b6d;
+        font-size: 16px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        overflow: auto;
+        &.language-javascript {
+          .hljs-built_in {
+            color: #5e3d50;
+          }
+          .hljs-function {
+            // color: #e03c8a;
+          }
+          .hljs-params {
+            color: #9f353a;
+          }
+          .hljs-string {
+            color: #6699a1;
+          }
+          .hljs-keyword {
+            color: #622954;
+          }
+        }
+      }
+    }
+  }
+}
